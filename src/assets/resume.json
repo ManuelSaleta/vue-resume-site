@@ -2,7 +2,7 @@
   "experience": [
     {
       "id": 1,
-      "heading": "Software Engineer Lead",
+      "heading": "Software Engineer Architect",
       "sub_heading": "Sion Central  06/2024–Present",
       "contributions": [
         "Designed and implemented secure authentication and authorization flows with Auth0, enabling SSO and MFA for financial application customers",
@@ -14,7 +14,7 @@
     },
     {
       "id": 2,
-      "heading": "Software Engineer Lead",
+      "heading": "FullStack Software Engineer",
       "sub_heading": "Bitstop ATM OPS Inc  06/2021–2024",
       "contributions": [
         "Led ReactJS code reviews and developed components using hooks, Redux, React Router, React-i18next, and React Spring to improve UX and platform functionality",

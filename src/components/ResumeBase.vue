@@ -7,6 +7,9 @@
         :contributions="section.contributions"
       />
     </div>
+
+    <hr />
+    <ResumeDownloadBtn />
   </div>
 </template>
 
@@ -14,6 +17,7 @@
 import { ref } from 'vue'
 import ResumeSection from './ResumeSection.vue'
 import resumeData from '@/assets/resume.json'
+import ResumeDownloadBtn from './ResumeDownloadBtn.vue'
 
 interface ResumeSection {
   id: number
