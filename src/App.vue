@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import ResumeBase from './components/ResumeBase.vue'
+import SiteBase from './components/SiteBase.vue'
 </script>
 
 <template>
   <main>
-    <ResumeBase />
+    <SiteBase />
   </main>
 </template>
 

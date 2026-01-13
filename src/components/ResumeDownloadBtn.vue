@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .resume-download-btn {
-  background-color: #007bff;
+  background-color: #4fc07f;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -33,5 +33,8 @@ export default {
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease;
+  display: flex;
+  justify-self: flex-end;
+  margin-top: 1rem;
 }
 </style>
