@@ -1,10 +1,12 @@
 <template>
   <div class="site-base">
+    <AboutMe></AboutMe>
     <ResumeBase> </ResumeBase>
   </div>
 </template>
 
 <script setup lang="ts">
+import AboutMe from './AboutMe.vue'
 import ResumeBase from './ResumeBase.vue'
 </script>
 
