@@ -1,12 +1,12 @@
 <template>
   <section class="resume-section">
     <div class="section-header">
-      <h2 class="section-title">{{ heading }}</h2>
-      <p class="section-subtitle">{{ subHeading }}</p>
+      <p class="section-title">{{ heading }}</p>
+      <p class="text-right font-semibold section-subtitle">{{ subHeading }}</p>
     </div>
     <div class="section-content">
       <slot></slot>
-      <ul v-if="contributions.length" class="contributions">
+      <ul v-if="contributions.length" class="list-disc contributions">
         <li v-for="(contribution, index) in contributions" :key="index">
           {{ contribution }}
         </li>
@@ -46,6 +46,7 @@ const { heading, subHeading, contributions } = defineProps<{
   font-size: 1rem;
   color: #666;
   margin: 0;
+  font-weight: 700;
 }
 
 .section-content {
