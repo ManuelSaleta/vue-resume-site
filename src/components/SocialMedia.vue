@@ -1,5 +1,5 @@
 <template>
-  <div class="social-media">
+  <div class="flex gap-1 justify-around">
     <a
       v-for="social in socialLinks"
       :key="social.name"
@@ -9,7 +9,7 @@
       rel="noopener noreferrer"
       class="social-link"
     >
-      <i :class="social.icon"></i>
+      <i :class="social.icon">{{ social.name }}</i>
     </a>
   </div>
 </template>
@@ -29,28 +29,27 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com',
+    url: 'https://www.linkedin.com/in/manuelsaleta/',
     icon: 'fab fa-linkedin',
   },
   {
     name: 'YouTube',
-    url: 'https://youtube.com',
+    url: 'https://youtube.com', // Replace with actual URL
     icon: 'fab fa-youtube',
+  },
+  {
+    name: 'Twitter',
+    url: 'https://twitter.com', // Replace with actual URL
+    icon: 'fab fa-twitter',
   },
 ]
 </script>
 
 <style scoped>
-.social-media {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
 .social-link {
   color: #333;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
