@@ -3,7 +3,7 @@
     {
       "id": 1,
       "heading": "Senior FullStack Software Engineer",
-      "sub_heading": "Sion Central  06/2024–Present",
+      "sub_heading": "Sion Central  06/2024 – Present",
       "contributions": [
         "Designed and implemented secure authentication and authorization flows with Auth0, enabling SSO and MFA for financial application customers",
         "Integrated SendGrid and Twilio for transactional email and SMS workflows for onboarding, alerts, and transaction confirmations",
@@ -15,7 +15,7 @@
     {
       "id": 2,
       "heading": "FullStack Software Engineer",
-      "sub_heading": "Bitstop ATM OPS Inc  06/2021–2024",
+      "sub_heading": "Bitstop ATM OPS Inc  06/2021 – 2024",
       "contributions": [
         "Led ReactJS code reviews and developed components using hooks, Redux, React Router, React-i18next, and React Spring to improve UX and platform functionality",
         "Refactored critical e-commerce pricing APIs from Python to C#, deployed with Docker & Kubernetes to achieve 99.95% uptime and reduce developer overhead by 20%",
@@ -28,7 +28,7 @@
     {
       "id": 3,
       "heading": "Software Engineer",
-      "sub_heading": "Amadeus Hospitality  02/2017–06/2021",
+      "sub_heading": "Amadeus North America  02/2017 – 06/2021",
       "contributions": [
         "Created API integrations for OperaPMS, ShijiPMS, HotSOS, and HotSOS Mobile, reducing manual transcription and cutting cleaning task time from 12 to 7 minutes",
         "Led migration to a web-based client using Angular, C#, SQL, and Azure; owned mobile development using Java, Kotlin, and Objective-C to increase staff visibility and planning",
@@ -39,7 +39,7 @@
     {
       "id": 4,
       "heading": "Software Engineer",
-      "sub_heading": "Assurant IT Solutions  10/2016–01/2017",
+      "sub_heading": "Assurant IT Solutions  10/2016 – 01/2017",
       "contributions": [
         "Organized corporate-sponsored internal hackathons and built web apps to track departmental POC initiatives",
         "Developed Alexa Skills for interactive payment options and collaborated directly with the VP of Technologies to execute events"
@@ -48,7 +48,7 @@
     {
       "id": 5,
       "heading": "Tutor / Instructor",
-      "sub_heading": "FIU Stars Tutoring | Miami, FL | 02/2015–09/2016",
+      "sub_heading": "FIU STARS Tutoring 02/2015 – 09/2016",
       "contributions": [
         "Provided individualized tutoring in Database Management, web development, Programming I–III, Operating Systems, Linux administration, and Application Security",
         "Improved student pass rates by tailoring study sessions and coursework support to individual learning needs"

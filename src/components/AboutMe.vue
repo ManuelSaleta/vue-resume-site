@@ -10,7 +10,7 @@
     />
     <span class="">|</span>
     <div class="about-me-text flex flex-col gap-2">
-      <p class="text-xl font-bold mb-2 und">About Me</p>
+      <!-- <p class="text-xl font-bold mb-2 und">About Me</p> -->
       <p class="">
         <b>I find solutions</b>, I am a seasoned Full-Stack Engineer with close to a decade of
         experience in the field. My expertise lies in developing robust back-end systems, with a
@@ -20,14 +20,11 @@
         management process. I invite you to follow me on GitHub, where you can explore both my
         professional work and personal projects in depth.
       </p>
-      <span>
-        <SocialMedia></SocialMedia>
-      </span>
+      <span> </span>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import profileAvatar from '@/assets/avatar.jpeg'
-import SocialMedia from './SocialMedia.vue'
 </script>

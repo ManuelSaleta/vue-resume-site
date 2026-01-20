@@ -23,9 +23,19 @@ interface SocialLink {
 
 const socialLinks: SocialLink[] = [
   {
+    name: 'manny2206@gmail.com',
+    url: 'mailto:manny2206@gmail.com',
+    icon: '',
+  },
+  {
+    name: '+1 (305) 773-8214',
+    url: 'tel:+3057738214',
+    icon: '',
+  },
+  {
     name: 'GitHub',
     url: 'https://github.com/ManuelSaleta',
-    icon: 'fab fa-github',
+    icon: 'fa fa-github',
   },
   {
     name: 'LinkedIn',
