@@ -22,13 +22,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import Heading from './Heading.vue'
-import { fetchResponse } from '@/agent'
+// import { fetchResponse } from '@/agent'
 
 const question = ref<string>('')
 const response = ref<string>('')
-const aiResponse = async () => {
-  response.value = (await fetchResponse(question.value))?.choices[0]?.message.content || ''
-}
+// const aiResponse = async () => {
+//   response.value = (await fetchResponse(question.value))?.choices[0]?.message.content || ''
+// }
 </script>
 
 <style scoped></style>
