@@ -37,3 +37,6 @@ __screenshots__/
 
 # Deployment
 .firebase/
+
+# Env files
+.env
