@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-1 justify-around">
+  <div class="flex flex-row justify-around mb-2">
     <a
       v-for="social in socialLinks"
       :key="social.name"
@@ -9,7 +9,7 @@
       rel="noopener noreferrer"
       class="social-link"
     >
-      <i :class="social.icon">{{ social.name }}</i>
+      <i :class="[social.icon, '']">{{ social.name }}</i>
     </a>
   </div>
 </template>
@@ -33,24 +33,19 @@ const socialLinks: SocialLink[] = [
     icon: '',
   },
   {
-    name: 'GitHub',
+    name: '',
     url: 'https://github.com/ManuelSaleta',
     icon: 'fa fa-github',
   },
   {
-    name: 'LinkedIn',
+    name: '',
     url: 'https://www.linkedin.com/in/manuelsaleta/',
     icon: 'fab fa-linkedin',
   },
   {
-    name: 'YouTube',
-    url: 'https://youtube.com', // Replace with actual URL
+    name: '',
+    url: 'https://www.youtube.com/@theseriousprofessional/videos',
     icon: 'fab fa-youtube',
-  },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com', // Replace with actual URL
-    icon: 'fab fa-twitter',
   },
 ]
 </script>
@@ -58,9 +53,7 @@ const socialLinks: SocialLink[] = [
 <style scoped>
 .social-link {
   color: #333;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
 }
 
 .social-link:hover {

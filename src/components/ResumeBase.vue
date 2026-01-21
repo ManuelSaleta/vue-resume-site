@@ -9,7 +9,9 @@
     </div>
 
     <hr />
-    <ResumeDownloadBtn />
+    <div class="flex justify-end">
+      <ResumeDownloadBtn />
+    </div>
   </div>
 </template>
 

@@ -1,9 +1,8 @@
 <template>
   <div class="site-base">
-    <Heading text="Contact" size="h1"></Heading>
+    <!-- <Heading text="Contact" size="h1"></Heading> -->
     <SocialMedia></SocialMedia>
-
-    <Heading text="About Me" size="h1"></Heading>
+    <!-- <Heading text="About Me" size="h1"></Heading> -->
     <AboutMe></AboutMe>
 
     <Heading text="Professional Experience" size="h1"></Heading>
