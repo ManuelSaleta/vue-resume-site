@@ -1,5 +1,6 @@
 {
   "name": "functions",
+  "main": "src/index.js",
   "engines": {
     "node": "20"
   },
