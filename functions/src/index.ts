@@ -1,21 +1,26 @@
-/**
- * Import function triggers from their respective submodules:
- *
- * import {onCall} from "firebase-functions/v2/https";
- * import {onDocumentWritten} from "firebase-functions/v2/firestore";
- *
- * See a full list of supported triggers at https://firebase.google.com/docs/functions
- */
+import * as functions from 'firebase-functions'
+import OpenAI from 'openai'
 
-// import { onRequest } from 'firebase-functions/v2/https'
-// import * as logger from 'firebase-functions/logger'
+const client = new OpenAI({
+  apiKey: functions.config().openai.key,
+})
 
-// Start writing functions
-// https://firebase.google.com/docs/functions/typescript
+export const openaiProxy = functions.https.onRequest(async (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*')
+  res.set('Access-Control-Allow-Headers', 'Content-Type')
+  if (req.method === 'OPTIONS') {
+    res.status(204).send('')
+    return
+  }
 
-// export const helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+  try {
+    const response = await client.responses.create({
+      model: 'gpt-4.1-mini',
+      input: req.body.input,
+    })
 
-export { openaiAgent } from './openaiAgent'
+    res.json(response)
+  } catch (err: any) {
+    res.status(500).json({ error: err.message })
+  }
+})
