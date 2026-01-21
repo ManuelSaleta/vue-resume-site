@@ -1,6 +1,7 @@
 <template>
   <div class="site-base">
     <!-- <Heading text="Contact" size="h1"></Heading> -->
+    <AIChatPrompt></AIChatPrompt>
     <SocialMedia></SocialMedia>
     <!-- <Heading text="About Me" size="h1"></Heading> -->
     <AboutMe></AboutMe>
@@ -12,6 +13,7 @@
 
 <script setup lang="ts">
 import AboutMe from './AboutMe.vue'
+import AIChatPrompt from './AIChatPrompt.vue'
 import Heading from './Heading.vue'
 import ResumeBase from './ResumeBase.vue'
 import SocialMedia from './SocialMedia.vue'
