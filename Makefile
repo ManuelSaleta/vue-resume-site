@@ -14,7 +14,7 @@ help: ## Show available commands
     @grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-15s\033[0m %s\n", $$1, $$2}'
 
 # Start dev server
-dev: version ## Start Vite dev server
+dev: version ## Set the correct node version & Start Vite dev server
 	$(RUN) dev
 
 # Build production bundle
@@ -38,7 +38,7 @@ test: ## Run tests
 	$(PNPM) test
 
 # Clean build artifacts
-clean: ## Remove build artifacts and caches
+clean: lint fmt## Remove build artifacts and caches
 	rm -rf dist .vite node_modules/.vite
 
 # Use the required node version

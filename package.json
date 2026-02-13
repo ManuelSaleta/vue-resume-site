@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "lint": "eslint . --fix --cache",
+    "lint": "eslint . --fix --cache --ignore-pattern .firebase",
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
