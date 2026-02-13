@@ -1,31 +1,30 @@
 <template>
-  <div class="skills-list">
-    <!-- Skills content will go here -->
-    <ul>
-      <li v-for="skill in skillsList" :key="skill.name">
-        {{ skill.name }}
-      </li>
-    </ul>
+  <div class="skills-list flex flex-wrap gap-2">
+    <span v-for="skill in skillsList" :key="skill.name">
+      <SkillChip
+        :text="skill.name"
+        :href="skill.url"
+        :color="skill.color"
+        prepend-icon="$vuetify"
+        textColor="primary"
+        variant="elevated"
+        rounded
+      ></SkillChip>
+    </span>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
 import { skills } from '@/assets/skills.json'
+import SkillChip from './SkillChip.vue'
 interface Skill {
   name: string
-  // Add other properties as needed
+  color: string
+  url: string
+  icon: string
 }
 const skillsList = ref<Skill[]>(skills)
-
-// onMounted(async () => {
-//   try {
-//     const response = await fetch('/src/assets/skills.json')
-//     skills.value = await response.json()
-//   } catch (error) {
-//     console.error('Error loading skills:', error)
-//   }
-// })
 </script>
 
 <style scoped>
