@@ -9,5 +9,5 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescript]": { "editor.defaultFormatter": "rvest.vs-code-prettier-eslint" },
-  "cSpell.words": ["eslintcache", "Vitest"]
+  "cSpell.words": ["eslintcache", "Vitest", "vuetify"]
 }

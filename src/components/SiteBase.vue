@@ -1,5 +1,6 @@
 <template>
   <div class="site-base">
+    <SkillsList></SkillsList>
     <!-- <Heading text="Contact" size="h1"></Heading> -->
     <SocialMedia></SocialMedia>
     <!-- <Heading text="About Me" size="h1"></Heading> -->
@@ -14,6 +15,7 @@
 import AboutMe from './AboutMe.vue'
 import Heading from './Heading.vue'
 import ResumeBase from './ResumeBase.vue'
+import SkillsList from './SkillsList.vue'
 import SocialMedia from './SocialMedia.vue'
 </script>
 
