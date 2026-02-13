@@ -1,0 +1,220 @@
+{
+    "skills": [
+        {
+            "name": "C# .NET Core"
+        },
+        {
+            "name": "C# .NET Framework"
+        },
+        {
+            "name": "C#9"
+        },
+        {
+            "name": "C#11"
+        },
+        {
+            "name": "JavaScript"
+        },
+        {
+            "name": "TypeScript"
+        },
+        {
+            "name": "Data structures"
+        },
+        {
+            "name": "IoC pattern / Dependency Injection"
+        },
+        {
+            "name": "OOP design"
+        },
+        {
+            "name": "MVC"
+        },
+        {
+            "name": "MVVM"
+        },
+        {
+            "name": "ASP.NET Core"
+        },
+        {
+            "name": "ASP.NET"
+        },
+        {
+            "name": "Entity Framework"
+        },
+        {
+            "name": "LINQ"
+        },
+        {
+            "name": "RESTful API development"
+        },
+        {
+            "name": "MSSQL"
+        },
+        {
+            "name": "MySQL"
+        },
+        {
+            "name": "PostgreSQL"
+        },
+        {
+            "name": "Azure Tables"
+        },
+        {
+            "name": "MongoDB"
+        },
+        {
+            "name": "Kusto Query"
+        },
+        {
+            "name": "Redis"
+        },
+        {
+            "name": "Elasticsearch"
+        },
+        {
+            "name": "GraphQL"
+        },
+        {
+            "name": "Azure Functions"
+        },
+        {
+            "name": "App Service"
+        },
+        {
+            "name": "Application Insights"
+        },
+        {
+            "name": "AWS Lambda"
+        },
+        {
+            "name": "Kubernetes"
+        },
+        {
+            "name": "Azure DevOps"
+        },
+        {
+            "name": "AWS S3"
+        },
+        {
+            "name": "Google Cloud Platform"
+        },
+        {
+            "name": "Terraform"
+        },
+        {
+            "name": "Android development"
+        },
+        {
+            "name": "iOS development"
+        },
+        {
+            "name": "Flutter"
+        },
+        {
+            "name": "Swift"
+        },
+        {
+            "name": "Kotlin"
+        },
+        {
+            "name": "Java"
+        },
+        {
+            "name": "Docker"
+        },
+        {
+            "name": "React Native"
+        },
+        {
+            "name": "Objective-C"
+        },
+        {
+            "name": "Unix Terminal"
+        },
+        {
+            "name": "CMD"
+        },
+        {
+            "name": "PowerShell"
+        },
+        {
+            "name": "Git"
+        },
+        {
+            "name": "Trunk-Based Development"
+        },
+        {
+            "name": "CircleCI"
+        },
+        {
+            "name": "DigitalOcean"
+        },
+        {
+            "name": "Bash"
+        },
+        {
+            "name": "Preact"
+        },
+        {
+            "name": "React.js"
+        },
+        {
+            "name": "Vue.js"
+        },
+        {
+            "name": "Ruby"
+        },
+        {
+            "name": "Python"
+        },
+        {
+            "name": "Crystal"
+        },
+        {
+            "name": "Angular"
+        },
+        {
+            "name": "Bilingual English and Spanish"
+        },
+        {
+            "name": "Jira"
+        },
+        {
+            "name": "Trello"
+        },
+        {
+            "name": "Functional Programming"
+        },
+        {
+            "name": "Agile methodologies (Scrum, Kanban)"
+        },
+        {
+            "name": "CI/CD pipelines"
+        },
+        {
+            "name": "Unit testing"
+        },
+        {
+            "name": "TDD (Test-Driven Development)"
+        },
+        {
+            "name": "Auth0"
+        },
+        {
+            "name": "Infrastructure as Code"
+        },
+        {
+            "name": "Liquid Template"
+        },
+        {
+            "name": "DRY"
+        },
+        {
+            "name": "Linear"
+        },
+        {
+            "name": "Notion"
+        }
+    ]
+}
