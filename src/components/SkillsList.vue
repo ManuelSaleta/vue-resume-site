@@ -26,9 +26,3 @@ interface Skill {
 }
 const skillsList = ref<Skill[]>(skills)
 </script>
-
-<style scoped>
-.skills-list {
-  /* Add your styles here */
-}
-</style>
