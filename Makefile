@@ -38,7 +38,7 @@ test: ## Run tests
 	$(PNPM) test
 
 # Clean build artifacts
-clean: lint fmt## Remove build artifacts and caches
+clean: fmt lint## Remove build artifacts and caches
 	rm -rf dist .vite node_modules/.vite
 
 # Use the required node version
