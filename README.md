@@ -84,6 +84,50 @@ Customize the site appearance in `src/styles/settings.scss` to match your person
 - **SocialMedia** - Social media links
 - **ResumeDownloadBtn** - PDF download button
 
+// ...existing code...
+
+## Available Commands
+
+This project uses a Makefile for convenient command execution. Run `make help` to see all available commands.
+
+### Common Commands
+
+```bash
+# Show all available commands
+make help
+
+# Start development server
+make dev
+
+# Build production bundle
+make build
+
+# Preview production build locally (opens in browser)
+make preview
+
+# Run linter
+make lint
+
+# Format code
+make fmt
+
+# Run tests
+make test
+
+# Clean build artifacts and caches
+make clean
+```
+
+### Node Version
+
+The project uses Node.js v22. The `make dev` command automatically sets the correct Node version using nvm before starting the development server.
+
+To manually set the Node version:
+
+```bash
+make version
+```
+
 ## License
 
 [MIT license](https://mit-license.org)
