@@ -14,17 +14,15 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 
-import { ref } from 'vue'
-
-const drawer = ref(false)
+const drawer = ref(false);
 
 const links = [
-  { label: 'About', to: '/about' },
-  { label: 'Projects', to: '/projects' },
-  { label: 'Contact', to: '/contact' },
+  { label: "Home", to: "/" },
+  { label: "Check out my book", to: "/Test" },
   // Add more pages here
-]
+];
 </script>
 
 <style scoped>

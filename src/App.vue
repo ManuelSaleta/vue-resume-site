@@ -1,28 +1,21 @@
 <script setup lang="ts">
 import SiteBase from "./components/SiteBase.vue";
 import SiteNavigation from "./components/SiteNavigation.vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
 </script>
 
 <template>
   <v-app>
     <v-main>
-      <!-- <v-app-bar :elevation="2">
-        <template v-slot:prepend>
-          <v-app-bar-nav-icon></v-app-bar-nav-icon>
-        </template>
+      <SiteNavigation />
 
-        <v-app-bar-title>Manuel Saleta</v-app-bar-title>
+      <!-- If on home page, show SiteBase -->
+      <SiteBase v-if="route.path === '/'" />
 
-      </v-app-bar>
-      <SiteBase /> -->
-      <SiteNavigation></SiteNavigation>
-      <SiteBase></SiteBase>
+      <!-- Otherwise show routed pages -->
+      <router-view v-else />
     </v-main>
   </v-app>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-</style>
