@@ -14,7 +14,6 @@ declare module 'vue' {
     AboutMe: typeof import('./components/AboutMe.vue')['default']
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     Heading: typeof import('./components/Heading.vue')['default']
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     ResumeBase: typeof import('./components/ResumeBase.vue')['default']
     ResumeDownloadBtn: typeof import('./components/ResumeDownloadBtn.vue')['default']
     ResumeSection: typeof import('./components/ResumeSection.vue')['default']
