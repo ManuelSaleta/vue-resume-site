@@ -1,5 +1,5 @@
 <template>
-  <v-chip v-bind="chipProps">
+  <v-chip v-bind="chipProps" target="_blank">
     <slot>{{ text }}</slot>
   </v-chip>
 </template>
@@ -33,14 +33,15 @@ interface ChipProps {
 }
 
 const props = defineProps<ChipProps>()
-const emit = defineEmits<{
-  (e: 'click', ev: MouseEvent): void
-  (e: 'close', ev: Event): void
-}>()
+// const emit = defineEmits<{
+//   (e: 'click', ev: MouseEvent): void
+//   (e: 'close', ev: Event): void
+// }>()
 
 const text = props.text ?? ''
 
 const chipProps = computed(() => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { text: _, ...rest } = props as Record<string, unknown>
   return rest
 })

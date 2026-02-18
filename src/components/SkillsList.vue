@@ -5,9 +5,10 @@
         :text="skill.name"
         :href="skill.url"
         :color="skill.color"
-        prepend-icon="$vuetify"
+        :prepend-icon="`mdi-${skill.icon}`"
         textColor="primary"
         variant="elevated"
+        outlined
         rounded
       ></SkillChip>
     </span>

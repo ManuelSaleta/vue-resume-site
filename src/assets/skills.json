@@ -1,148 +1,142 @@
 {
   "skills": [
     {
-      "name": "C# .NET Core",
+      "name": ".NET Core",
       "color": "#512BD4",
       "url": "https://learn.microsoft.com/dotnet/core/",
-      "icon": "dotnet"
+      "icon": "dot-net"
     },
     {
-      "name": "C# .NET Framework",
+      "name": ".NET Framework",
       "color": "#68217A",
       "url": "https://learn.microsoft.com/dotnet/framework/",
-      "icon": "dotnet"
+      "icon": "dot-net"
     },
     {
       "name": "C#9",
       "color": "#68217A",
       "url": "https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-9",
-      "icon": "csharp"
+      "icon": "language-csharp"
     },
     {
       "name": "C#11",
       "color": "#68217A",
       "url": "https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-11",
-      "icon": "csharp"
+      "icon": "language-csharp"
     },
     {
       "name": "JavaScript",
       "color": "#F7DF1E",
       "url": "https://developer.mozilla.org/docs/Web/JavaScript",
-      "icon": "javascript"
+      "icon": "language-javascript"
     },
     {
       "name": "TypeScript",
       "color": "#3178C6",
       "url": "https://www.typescriptlang.org/",
-      "icon": "typescript"
+      "icon": "language-typescript"
     },
     {
       "name": "Data structures",
       "color": "#0A84FF",
       "url": "https://en.wikipedia.org/wiki/Data_structure",
-      "icon": "data-structure"
+      "icon": "database-outline"
     },
     {
       "name": "IoC pattern / Dependency Injection",
       "color": "#FF6B6B",
       "url": "https://martinfowler.com/articles/injection.html",
-      "icon": "dependency-injection"
+      "icon": "vector-polyline"
     },
     {
       "name": "OOP design",
       "color": "#6A5ACD",
       "url": "https://en.wikipedia.org/wiki/Object-oriented_programming",
-      "icon": "oop"
+      "icon": "vector-polyline"
     },
     {
       "name": "MVC",
       "color": "#2E8B57",
       "url": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller",
-      "icon": "mvc"
-    },
-    {
-      "name": "MVVM",
-      "color": "#20B2AA",
-      "url": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel",
-      "icon": "mvvm"
+      "icon": "vector-polyline"
     },
     {
       "name": "ASP.NET Core",
       "color": "#512BD4",
       "url": "https://learn.microsoft.com/aspnet/core/",
-      "icon": "aspnet"
+      "icon": "dot-net"
     },
     {
       "name": "ASP.NET",
       "color": "#512BD4",
       "url": "https://learn.microsoft.com/aspnet/",
-      "icon": "aspnet"
+      "icon": "dot-net"
     },
     {
       "name": "Entity Framework",
       "color": "#512BD4",
       "url": "https://learn.microsoft.com/ef/",
-      "icon": "entity-framework"
+      "icon": "dot-net"
     },
     {
       "name": "LINQ",
       "color": "#68217A",
       "url": "https://learn.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/",
-      "icon": "linq"
+      "icon": "dot-net"
     },
     {
       "name": "RESTful API development",
       "color": "#FF8C00",
       "url": "https://restfulapi.net/",
-      "icon": "rest"
+      "icon": "api"
     },
     {
       "name": "MSSQL",
       "color": "#CC2927",
       "url": "https://learn.microsoft.com/sql/",
-      "icon": "mssql"
+      "icon": "database-search"
     },
     {
       "name": "MySQL",
       "color": "#00758F",
       "url": "https://dev.mysql.com/doc/",
-      "icon": "mysql"
+      "icon": "database-search"
     },
     {
       "name": "PostgreSQL",
       "color": "#336791",
       "url": "https://www.postgresql.org/docs/",
-      "icon": "postgresql"
+      "icon": "database-search"
     },
     {
       "name": "Azure Tables",
       "color": "#0078D4",
       "url": "https://learn.microsoft.com/azure/storage/tables/",
-      "icon": "azure"
+      "icon": "microsoft-azure"
     },
     {
       "name": "MongoDB",
       "color": "#47A248",
       "url": "https://www.mongodb.com/docs/",
-      "icon": "mongodb"
+      "icon": "database-search"
     },
     {
       "name": "Kusto Query",
       "color": "#0067B8",
       "url": "https://learn.microsoft.com/azure/data-explorer/kusto/query/",
-      "icon": "kusto"
+      "icon": "microsoft-azure"
     },
     {
       "name": "Redis",
       "color": "#DC382D",
       "url": "https://redis.io/documentation",
-      "icon": "redis"
+      "icon": "database-search"
     },
     {
       "name": "Elasticsearch",
       "color": "#005571",
       "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html",
-      "icon": "elasticsearch"
+      "icon": "text-search"
     },
     {
       "name": "GraphQL",
@@ -154,25 +148,25 @@
       "name": "Azure Functions",
       "color": "#0078D4",
       "url": "https://learn.microsoft.com/azure/azure-functions/",
-      "icon": "azure-functions"
+      "icon": "microsoft-azure"
     },
     {
       "name": "App Service",
       "color": "#0078D4",
       "url": "https://learn.microsoft.com/azure/app-service/",
-      "icon": "azure-app-service"
+      "icon": "microsoft-azure"
     },
     {
       "name": "Application Insights",
       "color": "#0078D4",
       "url": "https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview",
-      "icon": "app-insights"
+      "icon": "microsoft-azure"
     },
     {
       "name": "AWS Lambda",
       "color": "#FF9900",
       "url": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
-      "icon": "aws-lambda"
+      "icon": "lambda"
     },
     {
       "name": "Kubernetes",
@@ -184,19 +178,19 @@
       "name": "Azure DevOps",
       "color": "#0078D4",
       "url": "https://learn.microsoft.com/azure/devops/",
-      "icon": "azure-devops"
+      "icon": "microsoft-azure"
     },
     {
       "name": "AWS S3",
       "color": "#569A31",
       "url": "https://docs.aws.amazon.com/s3/index.html",
-      "icon": "aws-s3"
+      "icon": "aws"
     },
     {
       "name": "Google Cloud Platform",
       "color": "#4285F4",
       "url": "https://cloud.google.com/docs",
-      "icon": "gcp"
+      "icon": "google-cloud"
     },
     {
       "name": "Terraform",
@@ -214,31 +208,31 @@
       "name": "iOS development",
       "color": "#000000",
       "url": "https://developer.apple.com/documentation",
-      "icon": "ios"
+      "icon": "language-swift"
     },
     {
       "name": "Flutter",
       "color": "#02569B",
       "url": "https://docs.flutter.dev/",
-      "icon": "flutter"
+      "icon": "cellphone-cog"
     },
     {
       "name": "Swift",
       "color": "#F05138",
       "url": "https://developer.apple.com/swift/",
-      "icon": "swift"
+      "icon": "language-swift"
     },
     {
       "name": "Kotlin",
       "color": "#0095D5",
       "url": "https://kotlinlang.org/docs/home.html",
-      "icon": "kotlin"
+      "icon": "language-kotlin"
     },
     {
       "name": "Java",
       "color": "#007396",
       "url": "https://docs.oracle.com/en/java/",
-      "icon": "java"
+      "icon": "language-java"
     },
     {
       "name": "Docker",
@@ -253,22 +247,16 @@
       "icon": "react"
     },
     {
-      "name": "Objective-C",
-      "color": "#438EFF",
-      "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
-      "icon": "objective-c"
-    },
-    {
       "name": "Unix Terminal",
       "color": "#2E2E2E",
       "url": "https://www.gnu.org/software/bash/manual/",
-      "icon": "terminal"
+      "icon": "console"
     },
     {
       "name": "CMD",
       "color": "#0078D4",
       "url": "https://learn.microsoft.com/windows-server/administration/windows-commands/cmd",
-      "icon": "cmd"
+      "icon": "console"
     },
     {
       "name": "PowerShell",
@@ -286,31 +274,25 @@
       "name": "Trunk-Based Development",
       "color": "#0A84FF",
       "url": "https://trunkbaseddevelopment.com/",
-      "icon": "trunk-based"
+      "icon": "git"
     },
     {
       "name": "CircleCI",
       "color": "#343434",
       "url": "https://circleci.com/docs/",
-      "icon": "circleci"
+      "icon": "git"
     },
     {
       "name": "DigitalOcean",
       "color": "#0080FF",
       "url": "https://docs.digitalocean.com/",
-      "icon": "digitalocean"
+      "icon": "digital-ocean"
     },
     {
       "name": "Bash",
       "color": "#4EAA25",
       "url": "https://www.gnu.org/software/bash/manual/",
       "icon": "bash"
-    },
-    {
-      "name": "Preact",
-      "color": "#673AB7",
-      "url": "https://preactjs.com/guide/v10/getting-started",
-      "icon": "preact"
     },
     {
       "name": "React.js",
@@ -322,25 +304,19 @@
       "name": "Vue.js",
       "color": "#42B883",
       "url": "https://vuejs.org/guide/introduction.html",
-      "icon": "vue"
+      "icon": "vuejs"
     },
     {
       "name": "Ruby",
       "color": "#CC342D",
       "url": "https://www.ruby-lang.org/en/documentation/",
-      "icon": "ruby"
+      "icon": "language-ruby"
     },
     {
       "name": "Python",
       "color": "#3776AB",
       "url": "https://docs.python.org/3/",
-      "icon": "python"
-    },
-    {
-      "name": "Crystal",
-      "color": "#000000",
-      "url": "https://crystal-lang.org/reference/",
-      "icon": "crystal"
+      "icon": "language-python"
     },
     {
       "name": "Angular",
@@ -352,7 +328,7 @@
       "name": "Bilingual English and Spanish",
       "color": "#FFB400",
       "url": "https://en.wikipedia.org/wiki/Bilingualism",
-      "icon": "language"
+      "icon": "translate"
     },
     {
       "name": "Jira",
@@ -370,67 +346,67 @@
       "name": "Functional Programming",
       "color": "#8A2BE2",
       "url": "https://en.wikipedia.org/wiki/Functional_programming",
-      "icon": "functional"
+      "icon": "code-braces"
     },
     {
       "name": "Agile methodologies (Scrum, Kanban)",
       "color": "#00A3E0",
       "url": "https://www.scrum.org/resources/what-is-scrum",
-      "icon": "agile"
+      "icon": "cog"
     },
     {
       "name": "CI/CD pipelines",
       "color": "#FF6A00",
       "url": "https://en.wikipedia.org/wiki/CI/CD",
-      "icon": "cicd"
+      "icon": "git"
     },
     {
       "name": "Unit testing",
       "color": "#2D9CDB",
       "url": "https://en.wikipedia.org/wiki/Unit_testing",
-      "icon": "unit-test"
+      "icon": "test-tube"
     },
     {
       "name": "TDD (Test-Driven Development)",
       "color": "#FF5A5F",
       "url": "https://en.wikipedia.org/wiki/Test-driven_development",
-      "icon": "tdd"
+      "icon": "test-tube"
     },
     {
       "name": "Auth0",
       "color": "#EB5424",
       "url": "https://auth0.com/docs",
-      "icon": "auth0"
+      "icon": "api"
     },
     {
       "name": "Infrastructure as Code",
       "color": "#0F9D58",
       "url": "https://en.wikipedia.org/wiki/Infrastructure_as_code",
-      "icon": "iac"
+      "icon": "cog"
     },
     {
       "name": "Liquid Template",
       "color": "#00AEEF",
       "url": "https://shopify.github.io/liquid/",
-      "icon": "liquid"
+      "icon": "email-edit"
     },
     {
       "name": "DRY",
       "color": "#6C757D",
       "url": "https://en.wikipedia.org/wiki/Don%27t_repeat_yourself",
-      "icon": "dry"
+      "icon": "web"
     },
     {
       "name": "Linear",
       "color": "#111827",
       "url": "https://linear.app/docs",
-      "icon": "linear"
+      "icon": "web"
     },
     {
       "name": "Notion",
       "color": "#000000",
       "url": "https://www.notion.so/help",
-      "icon": "notion"
+      "icon": "web"
     }
   ]
 }
