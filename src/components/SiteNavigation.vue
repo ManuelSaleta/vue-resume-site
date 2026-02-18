@@ -1,7 +1,7 @@
 <template>
-  <v-app-bar color="primary">
+  <v-app-bar color="#f5f5f5" app>
     <v-app-bar-nav-icon @click="drawer = !drawer" />
-    <v-app-bar-title>My Portfolio</v-app-bar-title>
+    <v-app-bar-title>Manuel Saleta | Let's build together</v-app-bar-title>
   </v-app-bar>
 
   <v-navigation-drawer v-model="drawer" temporary>
@@ -14,17 +14,16 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
 
-import { ref } from 'vue'
-
-const drawer = ref(false)
+const drawer = ref(false);
 
 const links = [
-  { label: 'About', to: '/about' },
-  { label: 'Projects', to: '/projects' },
-  { label: 'Contact', to: '/contact' },
+  { label: "About", to: "/about" },
+  { label: "Projects", to: "/projects" },
+  { label: "Book", to: "/src/pages/BookPage" },
   // Add more pages here
-]
+];
 </script>
 
 <style scoped>
