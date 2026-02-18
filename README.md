@@ -1,8 +1,6 @@
 # Vue Resume Site
 
-A modern, responsive resume website built with Vue.js and Vuetify. Showcase your professional profile, skills, and experience in an elegant, easy-to-customize format.
-
-## Features
+A modern, responsive resume website built with Vue.js and Vuetify.
 
 - **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
 - **Resume Download** - Built-in button to download your resume as PDF
