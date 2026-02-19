@@ -11,10 +11,13 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AboutMe: typeof import('./components/AboutMe.vue')['default']
+    AboutMe: typeof import('./components/ResumeAbout.vue')['default']
+    AppBase: typeof import('./components/AppBase.vue')['default']
     AppFooter: typeof import('./components/AppFooter.vue')['default']
+    AppNavigation: typeof import('./components/AppNavigation.vue')['default']
     Heading: typeof import('./components/Heading.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    ResumeAbout: typeof import('./components/ResumeAbout.vue')['default']
     ResumeBase: typeof import('./components/ResumeBase.vue')['default']
     ResumeDownloadBtn: typeof import('./components/ResumeDownloadBtn.vue')['default']
     ResumeSection: typeof import('./components/ResumeSection.vue')['default']
@@ -22,8 +25,11 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     SiteBase: typeof import('./components/SiteBase.vue')['default']
     SiteNavigation: typeof import('./components/SiteNavigation.vue')['default']
+    Skill: typeof import('./components/SkillPill.vue')['default']
     SkillChip: typeof import('./components/SkillChip.vue')['default']
+    SkillPill: typeof import('./components/SkillPill.vue')['default']
     SkillsList: typeof import('./components/SkillsList.vue')['default']
-    SocialMedia: typeof import('./components/SocialMedia.vue')['default']
+    SocialMedia: typeof import('./components/Socials.vue')['default']
+    Socials: typeof import('./components/Socials.vue')['default']
   }
 }
