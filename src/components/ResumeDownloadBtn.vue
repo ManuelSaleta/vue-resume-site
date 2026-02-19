@@ -1,5 +1,11 @@
 <template>
-  <button class="resume-download-btn">
+  <v-btn
+    append-icon="mdi-download"
+    class="resume-download-btn"
+    title="Download Resume"
+    ripple
+    variant="tonal"
+  >
     <a
       :href="resume"
       download="Manuel_Saleta_Resume.pdf"
@@ -8,19 +14,19 @@
     >
       Download Resume
     </a>
-  </button>
+  </v-btn>
 </template>
 
 <script lang="ts">
-import resumePdf from '@/assets/Manuel_Saleta_Resume.pdf'
-import { ref } from 'vue'
+import resumePdf from "@/assets/Manuel_Saleta_Resume.pdf";
+import { ref } from "vue";
 
 export default {
   setup() {
-    const resume = ref<string>(resumePdf as string)
-    return { resume }
+    const resume = ref<string>(resumePdf as string);
+    return { resume };
   },
-}
+};
 </script>
 
 <style scoped>

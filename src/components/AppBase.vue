@@ -12,11 +12,11 @@
 </template>
 
 <script setup lang="ts">
-import AboutMe from './AboutMe.vue'
-import Heading from './Heading.vue'
-import ResumeBase from './ResumeBase.vue'
-import SkillsList from './SkillsList.vue'
-import SocialMedia from './SocialMedia.vue'
+import AboutMe from "./ResumeAbout.vue";
+import Heading from "./Heading.vue";
+import ResumeBase from "./ResumeBase.vue";
+import SkillsList from "./SkillsList.vue";
+import SocialMedia from "./Socials.vue";
 </script>
 
 <style scoped>

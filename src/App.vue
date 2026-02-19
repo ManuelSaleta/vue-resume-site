@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SiteBase from "./components/SiteBase.vue";
-import SiteNavigation from "./components/SiteNavigation.vue";
+import SiteBase from "./components/AppBase.vue";
+import SiteNavigation from "./components/AppNavigation.vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();

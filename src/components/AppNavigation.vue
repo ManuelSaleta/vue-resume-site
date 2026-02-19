@@ -1,7 +1,17 @@
 <template>
-  <v-app-bar color="primary">
+  <v-app-bar
+    color="#6d8c94"
+    scroll-behavior="fade-image"
+    image="/src/assets/low_poly_monochrome.png"
+  >
     <v-app-bar-nav-icon @click="drawer = !drawer" />
-    <v-app-bar-title>My Portfolio</v-app-bar-title>
+    <v-icon icon="/src/assets/cpu.svg"></v-icon>
+    <v-app-bar-title>
+      Manuel Saleta |
+      <!-- TODO: figure out the divider -->
+      <!-- <v-divider class="p-1" thickness="4" color="white" opacity="100" vertical/> -->
+      Lets build something great
+    </v-app-bar-title>
   </v-app-bar>
 
   <v-navigation-drawer v-model="drawer" temporary>
@@ -20,7 +30,8 @@ const drawer = ref(false);
 
 const links = [
   { label: "Home", to: "/" },
-  { label: "Check out my book", to: "/Test" },
+  { label: "About me", to: "/AboutMe" },
+  { label: "Books", to: "/BooksPage" },
   // Add more pages here
 ];
 </script>
