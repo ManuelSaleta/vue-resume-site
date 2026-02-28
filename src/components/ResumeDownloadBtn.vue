@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts">
-import resumePdf from "@/assets/Manuel_Saleta_Resume.pdf";
+import resumePdf from "@/assets/manuel_saleta_resume.pdf";
 import { ref } from "vue";
 
 export default {
