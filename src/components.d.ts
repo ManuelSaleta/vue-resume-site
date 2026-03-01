@@ -13,6 +13,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppBase: typeof import('./components/AppBase.vue')['default']
     AppNavigation: typeof import('./components/AppNavigation.vue')['default']
+    ContactInfo: typeof import('./components/ContactInfo.vue')['default']
     Heading: typeof import('./components/Heading.vue')['default']
     ResumeAbout: typeof import('./components/ResumeAbout.vue')['default']
     ResumeBase: typeof import('./components/ResumeBase.vue')['default']

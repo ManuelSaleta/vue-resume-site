@@ -1,12 +1,9 @@
 <template>
   <div class="site-base">
-    <SkillsList></SkillsList>
-    <!-- <Heading text="Contact" size="h1"></Heading> -->
-    <SocialMedia></SocialMedia>
-    <!-- <Heading text="About Me" size="h1"></Heading> -->
+    <!-- <SkillsList></SkillsList> -->
     <AboutMe></AboutMe>
 
-    <Heading text="Professional Experience" size="h1"></Heading>
+    <Heading text="Professional Experience" size="h2"></Heading>
     <ResumeBase> </ResumeBase>
   </div>
 </template>
@@ -16,13 +13,14 @@ import AboutMe from "./ResumeAbout.vue";
 import Heading from "./Heading.vue";
 import ResumeBase from "./ResumeBase.vue";
 import SkillsList from "./SkillsList.vue";
-import SocialMedia from "./Socials.vue";
+import SocialMedia from "./ContactInfo.vue";
 </script>
 
 <style scoped>
+/* The content's styles. Refer to main.css for base styles */
 .site-base {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 85%;
   margin: 0 auto;
 }
 </style>
