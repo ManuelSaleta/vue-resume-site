@@ -2,6 +2,8 @@
   <div class="site-base">
     <!-- <SkillsList></SkillsList> -->
     <AboutMe></AboutMe>
+    <Heading text="Relevant Skills" size="h2"></Heading>
+    <SkillsList></SkillsList>
 
     <Heading text="Professional Experience" size="h2"></Heading>
     <ResumeBase> </ResumeBase>
