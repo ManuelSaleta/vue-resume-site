@@ -1,8 +1,8 @@
-@import './base.css';
-@import 'tailwindcss';
+@import "./base.css";
+@import "tailwindcss";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 #app {
