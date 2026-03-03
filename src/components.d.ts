@@ -23,6 +23,5 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     SkillPill: typeof import('./components/SkillPill.vue')['default']
     SkillsList: typeof import('./components/SkillsList.vue')['default']
-    Socials: typeof import('./components/Socials.vue')['default']
   }
 }
