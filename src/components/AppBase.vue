@@ -15,7 +15,6 @@ import AboutMe from "./ResumeAbout.vue";
 import Heading from "./Heading.vue";
 import ResumeBase from "./ResumeBase.vue";
 import SkillsList from "./SkillsList.vue";
-import SocialMedia from "./ContactInfo.vue";
 </script>
 
 <style scoped>

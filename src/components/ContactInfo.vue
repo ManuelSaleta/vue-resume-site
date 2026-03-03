@@ -16,7 +16,7 @@
 
     <div class="hidden sm:block h-6 w-px bg-gray-300 mx-2"></div>
 
-    <div class="flex gap-1">
+    <!-- <div class="flex gap-1">
       <v-tooltip
         v-for="social in iconLinks"
         :key="social.url"
@@ -36,7 +36,7 @@
           />
         </template>
       </v-tooltip>
-    </div>
+    </div> -->
   </div>
 </template>
 
