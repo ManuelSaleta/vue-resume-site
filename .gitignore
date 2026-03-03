@@ -6,6 +6,7 @@ node_modules
 .env
 .env.local
 .env.*.local
+.eslintcache
 
 # Log files
 npm-debug.log*

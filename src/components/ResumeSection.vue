@@ -1,26 +1,29 @@
 <template>
-  <section class="resume-section">
-    <div class="section-header">
-      <p class="section-title">{{ heading }}</p>
-      <p class="text-right font-semibold section-subtitle">{{ subHeading }}</p>
-    </div>
-    <div class="section-content">
-      <slot></slot>
+  <v-card class="resume-section" variant="outlined">
+    <v-card-item>
+      <v-card-title class="section-title">
+        {{ heading }}
+      </v-card-title>
+      <v-card-subtitle class="section-subtitle text-right">
+        {{ subHeading }}
+      </v-card-subtitle>
+    </v-card-item>
+    <v-card-text>
       <ul v-if="contributions.length" class="list-disc contributions">
         <li v-for="(contribution, index) in contributions" :key="index">
           {{ contribution }}
         </li>
       </ul>
-    </div>
-  </section>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script setup lang="ts">
 const { heading, subHeading, contributions } = defineProps<{
-  heading: string
-  subHeading: string
-  contributions: string[]
-}>()
+  heading: string;
+  subHeading: string;
+  contributions: string[];
+}>();
 
 // component logic here — do NOT use `export default`
 </script>
@@ -59,6 +62,7 @@ const { heading, subHeading, contributions } = defineProps<{
 }
 
 .contributions li {
+  font-size: medium;
   margin-bottom: 0.5rem;
 }
 </style>

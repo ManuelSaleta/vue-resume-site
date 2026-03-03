@@ -10,10 +10,8 @@ const route = useRoute();
   <v-app>
     <v-main>
       <SiteNavigation />
-
       <!-- If on home page, show SiteBase -->
       <SiteBase v-if="route.path === '/'" />
-
       <!-- Otherwise show routed pages -->
       <router-view v-else />
     </v-main>
