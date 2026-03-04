@@ -1,5 +1,5 @@
-# Use zsh on macOS
-SHELL := /bin/zsh -l
+# Use bash for deployment compatibility
+SHELL := /bin/bash
 
 # Commands
 PNPM := pnpm
