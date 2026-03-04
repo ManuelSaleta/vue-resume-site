@@ -13,30 +13,6 @@
         rounded
       />
     </div>
-
-    <div class="hidden sm:block h-6 w-px bg-gray-300 mx-2"></div>
-
-    <!-- <div class="flex gap-1">
-      <v-tooltip
-        v-for="social in iconLinks"
-        :key="social.url"
-        location="top"
-        :text="social.name"
-      >
-        <template v-slot:activator="{ props }">
-          <v-btn
-            v-bind="props"
-            :href="social.url"
-            :icon="social.icon"
-            target="_blank"
-            variant="text"
-            color="secondary"
-            density="comfortable"
-            class="social-btn"
-          />
-        </template>
-      </v-tooltip>
-    </div> -->
   </div>
 </template>
 
@@ -80,7 +56,6 @@ const socialLinks: SocialLink[] = [
 
 // Logic to split data: Chips (Contact) vs Buttons (Socials)
 const contactLinks = computed(() => socialLinks.filter((l) => l.name !== ""));
-const iconLinks = computed(() => socialLinks.filter((l) => l.name === ""));
 </script>
 
 <style scoped>

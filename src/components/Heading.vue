@@ -1,7 +1,11 @@
 <template>
   <component
     :is="headingTag"
-    :class="['heading', { 'heading--underline': underline }, `heading--${size}`]"
+    :class="[
+      'heading',
+      { 'heading--underline': underline },
+      `heading--${size}`,
+    ]"
   >
     {{ text }}
   </component>
@@ -9,7 +13,7 @@
 
 <script lang="ts">
 export default {
-  name: 'PageHeading',
+  name: "PageHeading",
   props: {
     text: {
       type: String,
@@ -17,8 +21,9 @@ export default {
     },
     size: {
       type: String,
-      default: 'h1',
-      validator: (value: string) => ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(value),
+      default: "h1",
+      validator: (value: string) =>
+        ["h1", "h2", "h3", "h4", "h5", "h6"].includes(value),
     },
     underline: {
       type: Boolean,
@@ -27,10 +32,10 @@ export default {
   },
   computed: {
     headingTag() {
-      return this.size.toLowerCase()
+      return this.size.toLowerCase();
     },
   },
-}
+};
 </script>
 
 <style scoped>
