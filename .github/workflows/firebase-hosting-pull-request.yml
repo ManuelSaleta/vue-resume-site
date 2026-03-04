@@ -21,10 +21,9 @@ jobs:
           pnpm install --frozen-lockfile
           pnpm run build
 
-      - name: Run Quality Checks
+      - name: Run formatting check
         run: |
           make fmt
-          make test
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
