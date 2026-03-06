@@ -45,4 +45,4 @@ clean: fmt lint## Remove build artifacts and caches
 version: ## Uses the required node version for this project
 	@export NVM_DIR="$$HOME/.nvm"; \
 	[ -s "$$NVM_DIR/nvm.sh" ] && . "$$NVM_DIR/nvm.sh"; \
-	nvm use v22
+	nvm use --lts
