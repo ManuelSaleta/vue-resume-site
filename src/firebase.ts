@@ -23,4 +23,4 @@ const app = initializeApp(firebaseConfig);
 
 // Initialize Firestore with your specific database ID
 // Casting to Firestore ensures type safety across the app
-export const db: Firestore = getFirestore(app, "slice-of-life-poems");
+export const documentDb: Firestore = getFirestore(app, "slice-of-life-poems");

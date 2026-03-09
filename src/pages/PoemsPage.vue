@@ -7,7 +7,7 @@
         <!-- <h2 class="text-xl font-semibold mb-2">{{ poem.title }}</h2>
         <pre class="whitespace-pre-wrap text-gray-700">{{ poem.body }}</pre> -->
         <v-card>
-          <v-card-title >{{ poem.number }}. {{ poem.title }}</v-card-title>
+          <v-card-title>{{ poem.number }}. {{ poem.title }}</v-card-title>
           <v-card-text>{{ poem.body }}</v-card-text>
         </v-card>
       </div>
@@ -16,7 +16,7 @@
 </template>
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
-import { db, type Poem } from "@/firebase"; // Import the interface too
+import { documentDb, type Poem } from "@/firebase"; // Import the interface too
 import {
   collection,
   query,
@@ -33,7 +33,7 @@ const loading = ref<boolean>(true);
 
 onMounted(async () => {
   try {
-    const poemCollection = collection(db, "poems");
+    const poemCollection = collection(documentDb, "poems");
     //TODO: Get a random set of poems instead of the first 10, maybe using a random start point or a random selection method
     const q = query(poemCollection, orderBy("number", "asc"), limit(10)); // Limit to 10 poems for free version
 
