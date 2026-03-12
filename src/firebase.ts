@@ -33,7 +33,7 @@ export const documentDb: Firestore = firestore;
 // TODO: Consider making this conditional based on an environment variable for better flexibility
 if (!ENV.PROD) {
 
-  connectFirestoreEmulator(documentDb, '127.0.0.1', 5000);
+  connectFirestoreEmulator(documentDb, '127.0.0.1', 8080);
 } else {
   console.log("Using production Firestore database");
 }
