@@ -46,3 +46,7 @@ version: ## Uses the required node version for this project
 	@export NVM_DIR="$$HOME/.nvm"; \
 	[ -s "$$NVM_DIR/nvm.sh" ] && . "$$NVM_DIR/nvm.sh"; \
 	nvm use --lts
+
+# Starts the emulator. TODO: setup a document seed. 
+local-db:
+	firebase emulators:start

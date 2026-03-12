@@ -3,6 +3,7 @@
     <h1 class="text-3xl font-bold mb-6">Slice of Life Poems</h1>
     <div v-if="loading" class="text-center text-gray-500">Loading poems...</div>
     <div v-else class="space-y-8">
+      <!-- {{  ENV }} -->
       <div v-for="poem in poems" :key="poem.number" class="mb-6 w-2xl">
         <!-- <h2 class="text-xl font-semibold mb-2">{{ poem.title }}</h2>
         <pre class="whitespace-pre-wrap text-gray-700">{{ poem.body }}</pre> -->
@@ -15,8 +16,10 @@
   </div>
 </template>
 <script setup lang="ts">
+import { ENV } from "@/main";
 import { ref, onMounted } from "vue";
-import { documentDb, type Poem } from "@/firebase"; // Import the interface too
+import type { Poem } from "../common/interfaces";
+import { documentDb } from "@/firebase";
 import {
   collection,
   query,

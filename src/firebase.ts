@@ -1,16 +1,7 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, Firestore } from "firebase/firestore";
+import { getFirestore, Firestore, connectFirestoreEmulator } from "firebase/firestore";
+import { ENV } from "@/main";
 
-// Define the structure of your data for better DX
-export interface Poem {
-  number: number;
-  title: string;
-  body: string;
-  updated_at?: Date;
-}
-
-// Load .env
-const ENV = import.meta.env;
 
 const firebaseConfig = {
   apiKey: ENV.VITE_FIREBASE_API_KEY,
@@ -23,7 +14,26 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+//TODO: REFACTOR SUPA GROSS...
+//Use Firestore emulator for local development, otherwise use production Firestore
+let firestore: Firestore;
+if (ENV.PROD) {
+  console.log("Using production Firestore database");
+   firestore = getFirestore(app, "slice-of-life-poems");
+} else {
+  console.log("Connecting to Firestore emulator at 127.0.0.1:5000");
+  firestore = getFirestore(app);
+}
 
 // Initialize Firestore with your specific database ID
 // Casting to Firestore ensures type safety across the app
-export const documentDb: Firestore = getFirestore(app, "slice-of-life-poems");
+export const documentDb: Firestore = firestore;
+
+// Configure Firestore emulator for local development
+// TODO: Consider making this conditional based on an environment variable for better flexibility
+if (!ENV.PROD) {
+
+  connectFirestoreEmulator(documentDb, '127.0.0.1', 5000);
+} else {
+  console.log("Using production Firestore database");
+}
