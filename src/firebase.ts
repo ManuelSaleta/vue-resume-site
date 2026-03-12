@@ -9,13 +9,16 @@ export interface Poem {
   updated_at?: Date;
 }
 
+// Load .env
+const ENV = import.meta.env;
+
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "vue-resume-site.firebaseapp.com",
-  projectId: "vue-resume-site",
-  storageBucket: "vue-resume-site.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID",
+  apiKey: ENV.VITE_FIREBASE_API_KEY,
+  authDomain: ENV.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: ENV.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: ENV.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: ENV.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: ENV.VITE_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
