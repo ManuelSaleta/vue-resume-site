@@ -1,13 +1,8 @@
 # Use bash for deployment compatibility
 SHELL := /bin/bash
 
-# Commands
-PNPM := pnpm
-RUN := $(PNPM) run
-NVM := nvm
-
 # Phony targets
-.PHONY: help dev build preview lint fmt test clean
+.PHONY: help dev build preview lint fmt test clean set-node-version local-db 
 
 # Help: list available targets
 help: ## Show available commands
@@ -19,23 +14,23 @@ dev: set-node-version local-db ## Set the correct node version & Start Vite dev 
 
 # Build production bundle
 build: ## Build production bundle
-	$(RUN) build
+	pnpm run build
 
 # Preview production build locally and open browser (macOS)
 preview: build ## Preview production build on localhost and open browser
-	$(RUN) preview --port 4173 & sleep 1 && open http://localhost:4173
+	pnpm run preview --port 4173 & sleep 1 && open http://localhost:4173
 
 # Lint (assumes lint script exists)
 lint: ## Run linter
-	$(PNPM) run lint
+	pnpm run lint
 
 # Format (assumes format script exists)
 fmt: ## Run formatter
-	$(PNPM) run format
+	pnpm run format
 
 # Run tests (assumes test script exists)
 test: ## Run tests
-	$(PNPM) test
+	pnpm test
 
 # Clean build artifacts
 clean: fmt lint## Remove build artifacts and caches
@@ -51,5 +46,3 @@ set-node-version: ## Uses the required node version for this project
 local-db:
 	firebase emulators:start
 
-hello:
-	@echo 'hello world'
