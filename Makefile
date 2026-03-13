@@ -9,8 +9,10 @@ help: ## Show available commands
     @grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-15s\033[0m %s\n", $$1, $$2}'
 
 # Start dev server
-dev: set-node-version local-db ## Set the correct node version & Start Vite dev server
+dev: set-node-version local-db  ## Set the correct node version & Start Vite dev server
 	pnpm run dev
+
+	
 
 # Build production bundle
 build: ## Build production bundle
@@ -44,5 +46,7 @@ set-node-version: ## Uses the required node version for this project
 
 # Starts the emulator. TODO: setup a document seed. 
 local-db:
-	firebase emulators:start
+	firebase emulators:start&
+
+	
 

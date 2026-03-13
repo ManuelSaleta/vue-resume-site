@@ -1,7 +1,10 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, Firestore, connectFirestoreEmulator } from "firebase/firestore";
+import {
+  getFirestore,
+  Firestore,
+  connectFirestoreEmulator,
+} from "firebase/firestore";
 import { ENV } from "@/main";
-
 
 const firebaseConfig = {
   apiKey: ENV.VITE_FIREBASE_API_KEY,
@@ -19,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 let firestore: Firestore;
 if (ENV.PROD) {
   console.log("Using production Firestore database");
-   firestore = getFirestore(app, "slice-of-life-poems");
+  firestore = getFirestore(app, "slice-of-life-poems");
 } else {
   console.log("Connecting to Firestore emulator at 127.0.0.1:5000");
   firestore = getFirestore(app);
@@ -32,8 +35,7 @@ export const documentDb: Firestore = firestore;
 // Configure Firestore emulator for local development
 // TODO: Consider making this conditional based on an environment variable for better flexibility
 if (!ENV.PROD) {
-
-  connectFirestoreEmulator(documentDb, '127.0.0.1', 8080);
+  connectFirestoreEmulator(documentDb, "127.0.0.1", 60000);
 } else {
   console.log("Using production Firestore database");
 }

@@ -16,7 +16,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { ENV } from "@/main";
+// import { ENV } from "@/main";
 import { ref, onMounted } from "vue";
 import type { Poem } from "../common/interfaces";
 import { documentDb } from "@/firebase";
@@ -29,6 +29,7 @@ import {
   limit,
 } from "firebase/firestore";
 import type { DocumentData } from "firebase/firestore";
+// import { poemFactory } from "@/common/mocks/factories";
 
 // Explicitly type the ref as an array of Poems
 const poems = ref<Poem[]>([]);
@@ -44,6 +45,10 @@ onMounted(async () => {
 
     // Map the data and cast it to our Poem interface
     poems.value = querySnapshot.docs.map((doc) => doc.data() as Poem);
+
+    //TODO: enable a seed.js for the firestore
+    // Hack for local work:
+    // poems.value = poemFactory(20);
   } catch (error) {
     console.error("Firestore Fetch Error:", error);
   } finally {
