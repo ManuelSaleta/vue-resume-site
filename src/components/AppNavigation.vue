@@ -3,6 +3,7 @@
     color="#6d8c94"
     scroll-behavior="fade-image"
     image="/src/assets/low_poly_monochrome.png"
+    loading="lazy"
   >
     <v-app-bar-nav-icon @click="drawer = !drawer" />
     <v-icon icon="/src/assets/cpu.svg"></v-icon>
@@ -32,6 +33,7 @@ const links = [
   { label: "Home", to: "/" },
   { label: "About me", to: "/AboutMe" },
   { label: "Books", to: "/BooksPage" },
+  { label: "Poems", to: "/PoemsPage" },
   // Add more pages here
 ];
 </script>

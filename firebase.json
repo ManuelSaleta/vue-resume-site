@@ -32,5 +32,18 @@
         ]
       }
     ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 60003
+    },
+    "firestore": {
+      "port": 60000,
+      "host": "127.0.0.1"
+    },
+    "ui": {
+      "enabled": true,
+      "port": 60009
+    }
   }
 }

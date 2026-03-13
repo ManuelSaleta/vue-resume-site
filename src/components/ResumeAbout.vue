@@ -7,6 +7,7 @@
       alt="Profile picture"
       class="w-68 h-68 rounded-full object-cover shadow-sm shrink-0"
       loading="lazy"
+      sizes="(max-width: 600px) 400px, 800px"
     />
     <!-- <span class="">|</span> -->
     <div class="h-80 ml-1 mr-1">
