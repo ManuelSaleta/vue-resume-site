@@ -17,25 +17,17 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-//TODO: REFACTOR SUPA GROSS...
-//Use Firestore emulator for local development, otherwise use production Firestore
-let firestore: Firestore;
-if (ENV.PROD) {
-  console.log("Using production Firestore database");
-  firestore = getFirestore(app, "slice-of-life-poems");
-} else {
-  console.log("Connecting to Firestore emulator at 127.0.0.1:5000");
-  firestore = getFirestore(app);
-}
 
-// Initialize Firestore with your specific database ID
-// Casting to Firestore ensures type safety across the app
-export const documentDb: Firestore = firestore;
+// DB Name: Use 'default' for local development
+const dbName = !ENV.PROD ? "default" : "slice-of-life-poems";
 
-// Configure Firestore emulator for local development
-// TODO: Consider making this conditional based on an environment variable for better flexibility
+// DB Instance
+const documentDb: Firestore = getFirestore(app, dbName);
+
+// Ensure Firestore connects to the local emulator for local development
 if (!ENV.PROD) {
   connectFirestoreEmulator(documentDb, "127.0.0.1", 60000);
-} else {
-  console.log("Using production Firestore database");
+  console.debug("Connecting to local DB firestore instance");
 }
+
+export default documentDb;
