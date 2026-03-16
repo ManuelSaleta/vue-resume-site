@@ -31,9 +31,9 @@ const drawer = ref(false);
 
 const links = [
   { label: "Home", to: "/" },
-  { label: "About me", to: "/AboutMe" },
-  { label: "Books", to: "/BooksPage" },
-  { label: "Poems", to: "/PoemsPage" },
+  // { label: "About me", to: "/AboutMe" },
+  // { label: "Books", to: "/BooksPage" },
+  // { label: "Poems", to: "/PoemsPage" },
   // Add more pages here
 ];
 </script>
