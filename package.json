@@ -1,6 +1,7 @@
 {
   "name": "vue-resume-site",
   "version": "0.0.1",
+  "packageManager": "pnpm@10.26.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -41,7 +42,6 @@
     "eslint": "^9.39.2",
     "eslint-plugin-vue": "~10.5.1",
     "jiti": "^2.6.1",
-    "npm-run-all2": "^8.0.4",
     "prettier": "3.6.2",
     "sass-embedded": "^1.97.3",
     "typescript": "~5.9.3",
