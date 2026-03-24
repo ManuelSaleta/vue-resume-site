@@ -23,5 +23,6 @@ import SkillsList from "./SkillsList.vue";
   padding: 2rem;
   max-width: 85%;
   margin: 0 auto;
+  
 }
 </style>

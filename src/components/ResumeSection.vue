@@ -1,17 +1,32 @@
 <template>
-  <v-card class="resume-section" variant="outlined">
-    <v-card-item>
-      <v-card-title class="section-title">
-        {{ heading }}
-      </v-card-title>
-      <v-card-subtitle class="section-subtitle text-right">
-        {{ subHeading }}
-      </v-card-subtitle>
+  <v-card class="mb-8 shadow-md rounded-xl overflow-hidden border-none">
+    <v-card-item class="pb-0">
+      <div class="flex flex-col">
+        <v-card-title
+          class="text-3xl font-black tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 py-1"
+        >
+          {{ heading }}
+        </v-card-title>
+
+        <v-card-subtitle
+          class="text-right text-sm text-gray-500 font-bold uppercase tracking-widest -mt-1"
+        >
+          {{ subHeading }}
+        </v-card-subtitle>
+      </div>
+
+      <div class="h-px w-full bg-gray-100 mt-4"></div>
     </v-card-item>
-    <v-card-text>
-      <ul v-if="contributions.length" class="list-disc contributions">
-        <li v-for="(contribution, index) in contributions" :key="index">
-          {{ contribution }}
+
+    <v-card-text class="pt-4">
+      <ul v-if="contributions.length" class="space-y-3">
+        <li
+          v-for="(contribution, index) in contributions"
+          :key="index"
+          class="text-gray-700 text-md leading-relaxed"
+        >
+          -
+          <span class="ml-[-0.5rem]">{{ contribution }}</span>
         </li>
       </ul>
     </v-card-text>
@@ -24,45 +39,4 @@ const { heading, subHeading, contributions } = defineProps<{
   subHeading: string;
   contributions: string[];
 }>();
-
-// component logic here — do NOT use `export default`
 </script>
-
-<style scoped>
-.resume-section {
-  margin-bottom: 2rem;
-}
-
-.section-header {
-  margin-bottom: 1rem;
-}
-
-.section-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.5rem;
-}
-
-.section-subtitle {
-  font-size: 1rem;
-  color: #666;
-  margin: 0;
-  font-weight: 700;
-}
-
-.section-content {
-  padding-left: 1rem;
-}
-
-.contributions {
-  list-style-position: inside;
-  margin-top: 1rem;
-}
-
-.contributions li {
-  font-size: medium;
-  margin-bottom: 0.5rem;
-}
-</style>

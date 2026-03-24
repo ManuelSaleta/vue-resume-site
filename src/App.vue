@@ -7,8 +7,8 @@ const route = useRoute();
 </script>
 
 <template>
-  <v-app>
-    <v-main>
+  <v-app class="bg-gradient-to-br from-blue-500 to-purple-500">
+    <v-main class="bg-gradient-to-br from-blue-500 to-purple-900">
       <SiteNavigation />
       <!-- If on home page, show SiteBase -->
       <SiteBase v-if="route.path === '/'" />

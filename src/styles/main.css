@@ -1,26 +1,26 @@
 @import "./base.css";
 @import "tailwindcss";
 
-body {
+/* body {
   font-family: "Roboto", sans-serif;
-}
+} */
 
-#app {
-  width: 90%;
+/* #app { */
+/* width: 90%;
   /* max-width: 2048px; */
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
-}
+/* margin: 0 auto; */
+/* padding: 2rem; */
+/* font-weight: normal; */
+/* } */
 
-@media (hover: hover) {
+/* @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
-}
+} */
 
 /* Center content */
-@media (min-width: 100%) {
+/* @media (min-width: 100%) {
   body {
     display: flex;
     place-items: center;
@@ -29,4 +29,4 @@ body {
   #app {
     display: flex;
   }
-}
+} */
